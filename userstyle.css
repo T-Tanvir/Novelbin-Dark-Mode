@@ -1,0 +1,114 @@
+@-moz-document regexp("https://novelbin.com*"),
+regexp("https://novelbin.com/b/*"),
+regexp("https://novelbin.novel-online.org/novel/*")
+/* Home */ {
+  :root {
+    --color-bg-p: rgb(35, 35, 35);
+    --color-bg-s: rgb(53, 53, 53);
+    --color-bg-s-2: rgba(53, 53, 53, 0.8);
+    --color-text-p: rgb(178, 178, 178);
+    --color-blue: rgb(112, 200, 237);
+    --color-shadow: rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar-default {
+    background-color: var(--color-bg-p) !important;
+    border-color: var(--color-bg-s) !important;
+  }
+
+  #container {
+    background: var(--color-bg-p) !important;
+  }
+
+  .navbar-breadcrumb {
+    background: var(--color-bg-p);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-bg-s);
+  }
+
+  .header-list {
+    color: var(--color-text-p) !important;
+    border-bottom: 1px solid var(--color-bg-s);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-list a {
+    color: var(--color-text-p) !important;
+  }
+
+  .glyphicon {
+    color: var(--color-blue);
+  }
+
+  #hot-genre-select,
+  #new-genre-select {
+    background: var(--color-bg-s-2) !important;
+    border-radius: 4px;
+    position: absolute;
+  }
+
+  .index-novel .item .item-img {
+    border-radius: 4px;
+    box-shadow: 0 0 1px var(--color-shadow);
+  }
+
+  .item.top-1 div.title {
+    color: var(--color-blue);
+  }
+
+  .index-novel div.title {
+    color: var(--color-text-p);
+    background-color: var(--color-bg-s-2);
+    text-shadow: 1px 2px 2px var(--color-shadow);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .col-sidebar .list {
+    background-color: var(--color-bg-p);
+    border: 1px solid var(--color-bg-s);
+    border-radius: 4px;
+  }
+
+  .col-sidebar .list > .row {
+    background-color: var(--color-bg-p);
+  }
+
+  .col-sidebar .list.list-genre > .row > div a {
+    color: var(--color-text-p);
+  }
+
+  #index-novel-completed .caption > h3 {
+    margin-bottom: 4px;
+  }
+
+  #index-novel-completed .caption > h3 {
+    color: var(--color-text-p);
+  }
+
+  .btn-xs {
+    background-color: var(--color-bg-s);
+    color: var(--color-text-p) !important;
+  }
+
+  .footer {
+    background-color: var(--color-bg-p);
+    border-top: 1px solid var(--color-bg-s);
+    color: var(--color-text-p);
+  }
+
+  @media only screen and (min-width: 1025px) {
+    #novel-list-index .list h3 a {
+      color: var(--color-text-p);
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .list-thumb img {
+      box-shadow: 0 0 1px var(--color-shadow);
+      border-radius: 4px !important;
+      overflow: hidden;
+    }
+  }
+}
