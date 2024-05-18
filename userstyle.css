@@ -1,4 +1,13 @@
-@-moz-document regexp("https://novelbin.com*"),
+/* ==UserStyle==
+@name         NovelBin Ultimate-Darkness Theme
+@namespace    https://github.com/T-Tanvir
+@author       t_tanvir
+@description  Dark Theme
+@version      1.0.0
+@license      MIT
+@homepageURL  https://github.com/T-Tanvir/NovelBin-Ultimate-Darkness-Theme
+==/UserStyle== */
+@-moz-document domain("https://novelbin.com*"),
 regexp("https://novelbin.com/b/*"),
 regexp("https://novelbin.novel-online.org/novel/*")
 /* Home */ {
