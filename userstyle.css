@@ -241,7 +241,8 @@
 @-moz-document url-prefix("https://novelbin.novel-online.org/novel/"),
 url-prefix("https://novelbin.novel-online.org/novel/"),
 url-prefix("https://novelbin.meganovels.org/novel-book"),
-url-prefix("https://novelbin.noveltop1.me/novel-book/")
+url-prefix("https://novelbin.noveltop1.me/novel-book/"),
+url-prefix("https://novelbin.englishnovel.net/novel-book")
 {
   /* novelbin.novel-online.org */
   .navbar-default {
