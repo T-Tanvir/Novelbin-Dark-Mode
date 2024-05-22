@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name         NovelBin Ultimate-Darkness Theme
+@name         NovelBin-Ultimate-Darkness-Theme
 @namespace    https://github.com/T-Tanvir
 @author       t_tanvir
 @description  Dark Theme
@@ -7,10 +7,10 @@
 @license      MIT
 @homepageURL  https://github.com/T-Tanvir/NovelBin-Ultimate-Darkness-Theme
 ==/UserStyle== */
-@-moz-document domain("https://novelbin.com*"),
-regexp("https://novelbin.com/b/*"),
-regexp("https://novelbin.novel-online.org/novel/*")
-/* Home */ {
+@-moz-document url-prefix("https://novelbin.com/"),
+url-prefix("https://novelbin.com/b/*"),
+url-prefix("https://novelbin.novel-online.org/novel/*")
+{
   :root {
     --color-bg-p: rgb(35, 35, 35);
     --color-bg-s: rgb(53, 53, 53);
