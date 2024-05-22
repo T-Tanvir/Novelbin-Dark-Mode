@@ -3,13 +3,11 @@
 @namespace    https://github.com/T-Tanvir
 @author       t_tanvir
 @description  Dark Theme
-@version      1.0.0
+@version      1.0.1
 @license      MIT
 @homepageURL  https://github.com/T-Tanvir/NovelBin-Ultimate-Darkness-Theme
 ==/UserStyle== */
-@-moz-document url-prefix("https://novelbin.com/"),
-url-prefix("https://novelbin.com/b/*"),
-url-prefix("https://novelbin.novel-online.org/novel/*")
+@-moz-document url-prefix("https://novelbin.com/")
 {
   :root {
     --color-bg-p: rgb(35, 35, 35);
@@ -119,5 +117,215 @@ url-prefix("https://novelbin.novel-online.org/novel/*")
       border-radius: 4px !important;
       overflow: hidden;
     }
+  }
+}
+
+@-moz-document url-prefix("https://novelbin.com/b/")
+{
+  .navbar-default {
+    background-color: #232323 !important;
+    border-color: #353535;
+  }
+
+  #container {
+    background: #232323 !important;
+  }
+
+  .navbar-breadcrumb {
+    background: #232323;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #353535;
+  }
+
+  .breadcrumb-container {
+    height: 45px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 28px !important;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  .book img {
+    border-radius: 4px !important;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.4) !important;
+    overflow: hidden !important;
+  }
+
+  .col-info-desc {
+    font-family: "Nunito Sans", sans-serif;
+    /* 	font-size: 18px; */
+    line-height: 1.7;
+    padding: 30px 19px 40px;
+    user-select: none;
+    background-color: #2c2c2c;
+    color: #858585;
+    border: 2px solid #353535;
+    border-top: 0;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .col-sidebar .list.list-novel {
+      margin: 0px;
+      font-family: "Nunito Sans", sans-serif;
+      line-height: 1.7;
+      padding: 30px 19px 40px;
+      user-select: none;
+      background-color: #2c2c2c;
+      color: #858585;
+      border: 2px solid #353535;
+      border-top: 0;
+      position: relative;
+      border-radius: 5px;
+    }
+  }
+
+  .title {
+    text-transform: capitalize !important;
+    color: #b2b2b2 !important;
+  }
+
+  .info-meta li {
+    margin: 5px 0;
+    color: #b2b2b2 !important;
+  }
+
+  .info-meta a {
+    color: rgba(178, 178, 178, 0.5) !important;
+  }
+
+  #novel .tab-content {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    padding: 30px 19px 40px;
+    user-select: none;
+    background-color: #2c2c2c;
+    color: #858585;
+    border: 2px solid #353535;
+    border-top: 0;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .l-chapter {
+    margin: 20px 0 0;
+    font-size: 16px;
+    background-color: #2c2c2c;
+    color: #858585;
+    border: 2px solid #353535;
+    border-radius: 5px;
+  }
+
+  .l-chapter .item {
+    line-height: 30px;
+    padding: 8px 120px 8px 180px;
+    border-bottom: none !important;
+    position: relative;
+  }
+
+  #novel .nav-tabs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: auto;
+    padding: 5px;
+    background-color: #2c2c2c;
+    color: #858585;
+    border: 2px solid #353535;
+    border-radius: 5px;
+  }
+}
+
+@-moz-document url-prefix("https://novelbin.novel-online.org/novel/"),
+url-prefix("https://novelbin.novel-online.org/novel/"),
+url-prefix("https://novelbin.meganovels.org/novel-book"),
+url-prefix("https://novelbin.noveltop1.me/novel-book/")
+{
+  /* novelbin.novel-online.org */
+  .navbar-default {
+    background-color: #232323 !important;
+    border-color: #353535;
+  }
+
+  #container {
+    background: #232323 !important;
+  }
+
+  .navbar-breadcrumb {
+    background: #232323;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #353535;
+  }
+
+  .breadcrumb-container {
+    height: 45px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 28px !important;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  .novel-title,
+  .chr-title,
+  .chr-start,
+  .chr-end {
+    display: none !important;
+  }
+
+  .btn-success {
+    background: #333 !important;
+    border-color: #353535;
+  }
+  .btn-success:hover {
+    background: #858585 !important;
+    border-color: #353535;
+  }
+
+  .chapter .chr-c {
+    /* 	font-size: 28px !important; */
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.7;
+    padding: 30px 19px 40px;
+    user-select: none;
+    background-color: #2c2c2c;
+    color: #858585;
+    border: 2px solid #353535;
+    border-top: 0;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  @media (min-width: 1024px) {
+    .chapter .chr-c {
+      padding: 20px 40px 40px;
+      position: relative;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      width: 970px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .chapter .chr-c p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer {
+    background-color: #232323;
+    border-top: 1px solid #353535;
+    color: #858585;
+  }
+
+  html,
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(133, 133, 133) #ffff;
   }
 }
